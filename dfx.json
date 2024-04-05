@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "gigChain_backend": {
+      "main": "src/gigChain_backend/main.mo",
+      "type": "motoko"
+    },
+    "gigChain_frontend": {
+      "dependencies": [
+        "gigChain_backend"
+      ],
+      "source": [
+        "src/gigChain_frontend/dist"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
